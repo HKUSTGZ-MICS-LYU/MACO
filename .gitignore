@@ -9,6 +9,8 @@ grbnodes*
 gurobi.log
 model.lp
 __pycache__/
+*.log
+*.lp
 
 # Prerequisites
 *.d
