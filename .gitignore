@@ -7,6 +7,8 @@ dump.txt
 map_candidates/
 grbnodes*
 gurobi.log
+model.lp
+__pycache__/
 
 # Prerequisites
 *.d

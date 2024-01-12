@@ -28,7 +28,7 @@ architecture:
         attributes:
           block-size: 32
           datawidth: 8
-          depth: 1920
+          depth: 1792
           instances: 1
           n_banks: 1
           n_buffets: 1
@@ -63,7 +63,7 @@ architecture:
           attributes:
             block-size: 8
             datawidth: 8
-            depth: 192
+            depth: 512
             instances: 16
             meshX: 16
             n_banks: 1
@@ -79,7 +79,7 @@ architecture:
           attributes:
             block-size: 8
             datawidth: 8
-            depth: 256
+            depth: 128
             instances: 128
             meshX: 16
             n_banks: 1
@@ -94,7 +94,7 @@ architecture:
           subclass: smartbuffer_RF
           attributes:
             datawidth: 8
-            depth: 48
+            depth: 64
             instances: 128
             meshX: 16
             n_banks: 1
@@ -110,7 +110,7 @@ architecture:
             cluster-size: 64
             datawidth: 8
             depth: 1
-            instances: 1920
+            instances: 1408
             latency: 1ns
             meshX: 16
             num-ports: 2
@@ -122,7 +122,7 @@ architecture:
           subclass: lmac
           attributes:
             datawidth: 8
-            instances: 1920
+            instances: 1408
             meshX: 16
             technology: 45nm
             word-bits: 8
