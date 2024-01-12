@@ -1,0 +1,16 @@
+GlobalBuffer:
+  depth: 1664
+  instances: 1
+PEInputBuffer:
+  depth: 512
+  instances: 16
+PEWeightBuffer:
+  depth: 256
+  instances: 128
+PEAccuBuffer:
+  depth: 48
+  instances: 128
+PEWeightRegs:
+  instances: 896
+LMAC:
+  instances: 896

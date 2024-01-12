@@ -1,0 +1,139 @@
+ERT_summary:
+  version: 0.3
+  table_summary:
+  - name: System.DRAM
+    actions:
+    - name: read
+      energy: 512
+    - name: write
+      energy: 512
+    - name: idle
+      energy: 0
+    primitive_estimation(s):
+    - name: System.DRAM
+      estimator: Cacti
+  - name: System.Chiplet.PE[0..15].PEInputBuffer
+    actions:
+    - name: write
+      average_energy: 3.26225
+      max_energy: 6.4278
+      min_energy: 0.0967
+    - name: read
+      average_energy: 3.26225
+      max_energy: 6.4278
+      min_energy: 0.0967
+    - name: idle
+      energy: 0.0598
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: System.Chiplet.PE[0..15].PEWeightBuffer
+    actions:
+    - name: write
+      average_energy: 1.16445
+      max_energy: 2.24964
+      min_energy: 0.07926
+    - name: read
+      average_energy: 1.16445
+      max_energy: 2.24964
+      min_energy: 0.07926
+    - name: idle
+      energy: 0.04236
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: System.Chiplet.PE[0..15].PEAccuBuffer
+    actions:
+    - name: write
+      average_energy: 0.29235
+      max_energy: 0.52593
+      min_energy: 0.05877
+    - name: read
+      average_energy: 0.29235
+      max_energy: 0.52593
+      min_energy: 0.05877
+    - name: idle
+      energy: 0.02187
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: System.Chiplet.PE[0..15].PEWeightRegs
+    actions:
+    - name: access
+      energy: 0.009
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+  - name: System.Chiplet.PE[0..15].LMAC
+    actions:
+    - name: compute
+      energy: 0.5608
+    primitive_estimation(s):
+    - name: intmac
+      estimator: Aladdin_table
+  - name: System.Chiplet.GlobalBuffer
+    actions:
+    - name: write
+      average_energy: 42.25715
+      max_energy: 84.4616
+      min_energy: 0.05271
+    - name: read
+      average_energy: 33.65281
+      max_energy: 67.2529
+      min_energy: 0.05271
+    - name: idle
+      energy: 0.01581
+    primitive_estimation(s):
+    - name: storage
+      estimator: Cacti
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: System.Chiplet.NoC
+    actions:
+    - name: transfer_random
+      average_energy: 1.03176
+      max_energy: 1.0726
+      min_energy: 1.00726
+    - name: transfer_repeated
+      average_energy: 0.03176
+      max_energy: 0.0726
+      min_energy: 0.00726
+    - name: idle
+      energy: 0.0004
+    primitive_estimation(s):
+    - name: Y_memory_controller[0..0]
+      estimator: Aladdin_table
+    - name: X_memory_controller[0]
+      estimator: Aladdin_table
+    - name: Y_X_wire
+      estimator: dummy_table
+    - name: Y_memory_controller[0..1]
+      estimator: Aladdin_table
+    - name: Y_memory_controller[0..2]
+      estimator: Aladdin_table
+    - name: Y_memory_controller[0..3]
+      estimator: Aladdin_table
+    - name: X_memory_controller[0..15]
+      estimator: Aladdin_table

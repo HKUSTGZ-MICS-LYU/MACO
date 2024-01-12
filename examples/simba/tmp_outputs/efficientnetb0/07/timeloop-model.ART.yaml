@@ -1,0 +1,19 @@
+ART:
+  version: 0.3
+  tables:
+  - name: System.DRAM
+    area: 0
+  - name: System.Chiplet.PE[0..15].PEInputBuffer
+    area: 13161.72
+  - name: System.Chiplet.PE[0..15].PEWeightBuffer
+    area: 5041.72
+  - name: System.Chiplet.PE[0..15].PEAccuBuffer
+    area: 1162.52
+  - name: System.Chiplet.PE[0..15].PEWeightRegs
+    area: 5.98
+  - name: System.Chiplet.PE[0..15].LMAC
+    area: 332.25
+  - name: System.Chiplet.GlobalBuffer
+    area: 417462.0
+  - name: System.Chiplet.NoC
+    area: 176.0
