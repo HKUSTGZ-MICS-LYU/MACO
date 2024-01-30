@@ -22,8 +22,6 @@ class RandomMethod:
 
   def start(self):
     init_points = np.random.uniform(low=self.lb, high=self.ub, size=(self.ninit, self.dims))
-    # init_points = latin_hypercube(self.ninit, self.dims)
-    # init_points = from_unit_cube(init_points, self.lb, self.ub)
     while self.sample_counter < self.neval:
       next_X = init_points[self.sample_counter]
       print(f"next: {next_X[:5]}")
